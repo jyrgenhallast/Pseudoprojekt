@@ -78,5 +78,26 @@
 </script>
 <br>
 
+<p>Pseudo 8</p>
+<button id="red1">Red</button>
+<button id="green1">Green</button>
+<button id="blue1">Blue</button>
+<script>
+        $("#red1").on( "click", function() {
+            var btnCol = $(this);
+        $("body").css("background-color", btnCol.text() );
+    });
+    $("#green1").on( "click", function() {
+        var btnCol = $(this);
+        $("body").css("background-color",btnCol.text());
+    });
+    $("#blue1").on( "click", function() {
+        var btnCol = $(this);
+        $("body").css("background-color",btnCol.text());
+    });
+</script>
+<br>
+
+
 </body>
 </html>
