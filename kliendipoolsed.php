@@ -36,7 +36,18 @@
 <br>
 
 <p>Pseudo 5</p>
+<img id="myImage" onclick="changeImage()" src="kassipilt.jpeg" width="256" height="256">
 
+<script>
+    function changeImage() {
+        var image = document.getElementById("myImage");
+        if (image.src.match("koerapilt")) {
+            image.src = "kassipilt.jpeg";
+        } else {
+            image.src = "koerapilt.jpg";
+        }
+    }
+</script>
 
 </body>
 </html>
