@@ -17,5 +17,14 @@
 </script>
 <br>
 
+<p>Pseudo 2</p>
+<script type="text/javascript">
+    function linkAlert(node) {
+        return alert("Tere Maailm");
+    }
+</script>
+<a href="http://www.khk.ee" onclick="return linkAlert(this);">Tere Maailm</a>
+<br>
+
 </body>
 </html>
