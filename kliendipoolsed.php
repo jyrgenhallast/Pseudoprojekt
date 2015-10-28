@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pseudo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
 <p>Pseudo 2</p>
@@ -48,6 +49,17 @@
         }
     }
 </script>
+<br>
+
+<p>Pseudo 6</p>
+<img src="kassipilt.jpeg" id="kass">
+<script>
+    $("#kass").on({'click': function(){
+            $("#kass").attr("src","koerapilt.jpg");
+        }
+    });
+</script>
+<br>
 
 </body>
 </html>
