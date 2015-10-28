@@ -61,5 +61,22 @@
 </script>
 <br>
 
+<p>Pseudo 7</p>
+<button id="red">Red</button>
+<button id="green">Green</button>
+<button id="blue">Blue</button>
+<script>
+    $("#red").on( "click", function() {
+        $("body").css("background-color","red");
+    });
+    $("#green").on( "click", function() {
+        $("body").css("background-color","green");
+    });
+    $("#blue").on( "click", function() {
+        $("body").css("background-color","blue");
+    });
+</script>
+<br>
+
 </body>
 </html>
