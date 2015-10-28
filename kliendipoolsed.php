@@ -1,10 +1,5 @@
 
-/**
- * Created by PhpStorm.
- * User: Jürgen
- * Date: 23.09.15
- * Time: 11:14
- */
+
 
 <!doctype html>
 <html lang="en">
@@ -13,12 +8,14 @@
     <title>Pseudo</title>
 </head>
 <body>
-<button onclick="tereMaailm"()>Tere Maailm</button>
+<p>Pseudo 1</p>
+<button onclick="tereMaailm()">Tere Maailm</button>
 <script>
     function tereMaailm() {
         alert("Tere Maailm");
     }
 </script>
+<br>
 
 </body>
 </html>
