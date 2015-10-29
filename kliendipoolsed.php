@@ -79,19 +79,19 @@
 <br>
 
 <p>Pseudo 8</p>
-<button id="red1">Red</button>
-<button id="green1">Green</button>
-<button id="blue1">Blue</button>
+<button id="col1">Red</button>
+<button id="col2">Green</button>
+<button id="col3">Blue</button>
 <script>
-        $("#red1").on( "click", function() {
+        $("#col1").on( "click", function() {
             var btnCol = $(this);
         $("body").css("background-color", btnCol.text() );
     });
-    $("#green1").on( "click", function() {
+    $("#col2").on( "click", function() {
         var btnCol = $(this);
         $("body").css("background-color",btnCol.text());
     });
-    $("#blue1").on( "click", function() {
+    $("#col3").on( "click", function() {
         var btnCol = $(this);
         $("body").css("background-color",btnCol.text());
     });
@@ -99,14 +99,32 @@
 <br>
 
 <p>Pseudo 9</p>
-<p>Body osas contextmenu return false</p>
+<p>$("body").contextmenu( function() {
+    return false;
+    });</p>
+<!--
 <script>
     $("body").contextmenu( function() {
         return false;
     });
-</script>
+</script> -->
 <br>
 
+<p>Pseudo 10</p>
+<button id="clickOk">Luba parem klikk</button>
+<script>
+    $(document).ready(function(){
+        $(this).bind("contextmenu", function(click) {
+            click.preventDefault();
+        });
+
+        $("#clickOk").click(function(){
+            $(document).ready(function(){
+                $(this).unbind();
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
