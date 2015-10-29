@@ -125,6 +125,17 @@
         });
     });
 </script>
+<br>
+
+<p>Pseudo 11</p>
+<button>Kassipildi tegemise ja peitmise nupp</button>
+<img src="kassipilt.jpeg" id="kassipilt" style="display: none" />
+<script>
+    $( "button" ).click(function() {
+        $( "#kassipilt" ).toggle();
+    });
+</script>
+<br>
 
 </body>
 </html>
