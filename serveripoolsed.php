@@ -1,2 +1,6 @@
 <?php
-print "Tere maailm";
+print "Tere maailm"."<br>";
+
+$eesnimi = "Jurgen";
+$perekonnanimi = "Hallast";
+print "$eesnimi $perekonnanimi"."<br>";
