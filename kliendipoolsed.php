@@ -98,6 +98,15 @@
 </script>
 <br>
 
+<p>Pseudo 9</p>
+<p>Body osas contextmenu return false</p>
+<script>
+    $("body").contextmenu( function() {
+        return false;
+    });
+</script>
+<br>
+
 
 </body>
 </html>
