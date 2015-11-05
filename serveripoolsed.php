@@ -36,3 +36,4 @@ $num1= 1.23;
 $num2= 2.34;
 $sum= floatval($num1+$num2);
 print "<br>".$sum. "<br>";
+print $_GET["koer"];
