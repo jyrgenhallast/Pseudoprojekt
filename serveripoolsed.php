@@ -36,4 +36,12 @@ $num1= 1.23;
 $num2= 2.34;
 $sum= floatval($num1+$num2);
 print "<br>".$sum. "<br>";
-print $_GET["koer"];
+print $_GET["koer"];?>
+<form action="?" method="post">
+    <input type="text" name="kass"><br>
+    <input type="submit">
+</form>
+<?php
+if ($_POST["kass"]){
+    print "Kass oli " . $_POST["kass"]."<br>";
+};
