@@ -11,6 +11,9 @@ $isik = array(
     "eesnimi" => $eesnimi,
     "perekonnanimi"=> $perekonnanimi,
     "vanus"=>$vanus,
-
 );
-print "$isik[eesnimi] $isik[perekonnanimi] ($isik[vanus])";
+print "$isik[eesnimi] $isik[perekonnanimi] ($isik[vanus])"."<br>";
+
+if ($eesnimi_algab_vokaaliga){
+    print "Eesnimi algab vokaaliga"."<br>";
+}
