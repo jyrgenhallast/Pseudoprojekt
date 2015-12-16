@@ -37,25 +37,25 @@
 <br>
 
 <p>Pseudo 5</p>
-<img id="myImage" onclick="changeImage()" src="kassipilt.jpeg" width="256" height="256">
+<img id="myImage" onclick="changeImage()" src="kassipilt1.jpeg" width="256" height="256">
 
 <script>
     function changeImage() {
         var image = document.getElementById("myImage");
-        if (image.src.match("koerapilt")) {
-            image.src = "kassipilt.jpeg";
+        if (image.src.match("koerapilt1")) {
+            image.src = "kassipilt1.jpeg";
         } else {
-            image.src = "koerapilt.jpg";
+            image.src = "koerapilt1.jpg";
         }
     }
 </script>
 <br>
 
 <p>Pseudo 6</p>
-<img src="kassipilt.jpeg" id="kass">
+<img src="kassipilt1.jpeg" id="kass">
 <script>
     $("#kass").on({'click': function(){
-            $("#kass").attr("src","koerapilt.jpg");
+            $("#kass").attr("src","koerapilt1.jpg");
         }
     });
 </script>
